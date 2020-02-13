@@ -26,9 +26,15 @@ Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
+Dynamic arrays are arrays that can resize themselves automatically. Retrieving data is typically 0(1), append is typically 0(1), deleting and inserting are typically 0(n).
+Increasing the storage size can be costly if things are getting appended or deleted from the end, and results in longer runtimes.
+
 Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+Blocks are blocks of data that are linked (chained) together. In order to protect and verify the data, hashsignatures are added each time.
  
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+A 51 percent attack, or majority attack, is a case when a user or a group of users control the majority of mining power.
+While hashes are the most common form of proof of work, there are a few different ways to provide proof of work (integer factorization, etc.). By providing hashes as proof of work it helps provide a secure environment for the blockchain.
 
 ## Project Set Up
 
